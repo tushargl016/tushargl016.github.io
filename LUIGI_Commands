@@ -1,0 +1,10 @@
+Write a Luigi Pipeline to scrape data and do Feature Engineering In the Directory Part1, the files declined.py and loandata.py when run using the below commands will start the luigi pipelines for accepted loan data and declined loan data. ##Note: Make Sure you have an active internet connection
+Command to run the LUIGI pipeline for Accepted Loan Data
+python loandata.py --local-scheduler uploadtos3 --akey "Put yourAWS Aceess key" --skey "Put your AWS Secret Acess Key"
+
+Command to run the LUIGI pipeline for Declined Loan Data
+python declined.py --local-scheduler uploadtos3 --akey "Put yourAWS Aceess key" --skey "Put your AWS Secret Acess Key"
+
+For the Feature Selection we have computed various metrics that can be found in the FeatureSelection.csv More information on that can be found in the documentation
+
+Compute Summary metrics for the Loan Data In the Folder Part1 the filename SummaryMetricsAssignment2.ipynb has all the summary metrics along with the desription of what they signify
